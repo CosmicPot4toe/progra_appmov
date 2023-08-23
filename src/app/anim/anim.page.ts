@@ -8,8 +8,10 @@ import { AnimationController, Animation } from '@ionic/angular';
 })
 export class AnimPage {
 	
-	// El equivalente a un document.getElementById() 
-	// solo que con una variable local
+	/** 
+	* El equivalente a un document.getElementById() 
+	* solo que con una variable local
+	*/
 	@ViewChild('square',{ read : ElementRef }) square!:ElementRef;
 
 	private anim!:Animation;
