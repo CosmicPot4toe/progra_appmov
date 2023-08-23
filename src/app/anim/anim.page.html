@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Anim</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Anim</ion-title>
+    </ion-toolbar>
+  </ion-header>
+	<br><br><br>
+	<!-- el id="square" es solo por el estilo
+	El #square es el que es buscado por el @ViewChild -->
+	<div #square id="square"></div>
+	<ion-button (click)="play()">Play</ion-button>
+	<ion-button (click)="stop()">Stop</ion-button>
+</ion-content>
