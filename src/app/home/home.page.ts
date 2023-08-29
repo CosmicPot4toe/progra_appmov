@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { User } from '../app-model';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  usuarios:User[]=[
+    {id:1,nombre:'pedrito',pass:'1234'},
+    {id:2,nombre:'Ale',pass:'1342'}
+  ];
 
+
+  constructor() {}
 	// Shit for the Education Level thingy, can't doc ever lol
 	isOpen = false;
 	SelOpt = '';

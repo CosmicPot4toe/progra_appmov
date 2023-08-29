@@ -28,7 +28,7 @@
     </ion-toolbar>
   </ion-header>
 	<br><br><br>
-	<div id="container">
+	<div class="container">
 		<ion-list>
 			<ion-item> <!-- nombre -->
 				<ion-input
@@ -56,4 +56,22 @@
 		</ion-list>
 		<ion-button [routerLink]="['/anim']">Anims</ion-button>
 	</div>
+	<br><br><br>
+	<div class="container">
+		<table>
+			<tr>
+				<th>id</th><th>nombre</th><th>Password</th>
+			</tr>
+			<tr *ngFor="let x of usuarios">
+				<td>{{x.id}}</td>
+				<td>{{x.nombre}}</td>
+				<td>{{x.pass}}</td>
+			</tr>
+		</table>
+	</div>
 </ion-content>
+<!-- 
+	get userN and pass
+	if name is the same in the table check pass
+	if everything is the same get the id and send it to the other place
+ -->
