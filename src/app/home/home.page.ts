@@ -33,9 +33,14 @@ export class HomePage {
       alert(err);
     }
   }
-
-
-
+  //createTbl(){
+  //  this.db.executeSql(
+  //    'create table IF NOT EXISTS books(name VARCHAR(32),price VARCHAR(10))',//sql sentence
+  //    []//params if needed
+  //    )
+  //  .then((result)=>alert('table created'))
+  //  .catch(e=>alert(JSON.stringify(e)))
+  //}
 
 	// Shit for the Education Level thingy, can't doc ever lol
 	isOpen = false;
